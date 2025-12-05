@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Proyecto Final - Tienda de Celulares</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+
+  <!-- Íconos FontAwesome (se debe cargar en el HEAD, no dentro de secciones) -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Estilos externos -->
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <header>
+    <img src="imagen/logg.png" class="logo" alt="Logo de la tienda">
+    <h1>Mi Tienda de Celulares</h1>
+
+    <nav>
+      <ul>
+        <li><a href="#inicio"><i class="fa-solid fa-house"></i> Inicio</a></li>
+        <li><a href="#productos"><i class="fa-solid fa-mobile-screen-button"></i> Productos</a></li>
+        <li><a href="#reseñas"><i class="fa-solid fa-star"></i> Reseñas</a></li>
+        <li><a href="#contacto"><i class="fa-solid fa-envelope"></i> Contactos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Inicio -->
+    <section id="inicio">
+      <video controls autoplay muted loop width="80%">
+        <source src="videos/celubarato.mp4" type="video/mp4">
+        Tu navegador no soporta el video.
+      </video>
+    </section>
+
+    <!-- Productos -->
+    <section id="productos">
+      <h2>Productos</h2>
+
+      <div class="productos--contenedor">
+
+        <!-- Producto 1 -->
+        <article class="producto">
+          <img src="imagen/xiaomi.png" alt="Xiaomi 14T">
+          <h5>Xiaomi 14T</h5>
+          <p>
+            En definitiva, Xiaomi se presenta como una opción atractiva para quienes buscan un smartphone con grandes
+            prestaciones y precio accesible.
+          </p>
+          <p class="precio">$350.000</p>
+          <button class="add-to-cart"
+        data-name="Xiaomi 14T"
+        data-price="350000"
+        data-img="imagenes/xiaomi.png">
+  Agregar al carrito
+</button>
+
+        </article>
+
+        <!-- Producto 2 -->
+        <article class="producto">
+          <img src="imagen/todos.jpg" alt="Samsung Galaxy S">
+          <h5>Samsung Galaxy S</h5>
+          <p>
+            El Galaxy S combina potencia, estilo y una experiencia completa con diseño premium y excelente cámara.
+          </p>
+          <p class="precio">$350.000</p>
+          <button class="add-to-cart"
+        data-name="Samsung Galaxy S"
+        data-price="350000"
+        data-img="imagenes/samsung S.jpg">
+  Agregar al carrito
+</button>
+
+        </article>
+
+        <!-- Producto 3 -->
+        <article class="producto">
+          <img src="imagen/todos.jpg" alt="Varios modelos: iPhone, Motorola, Redmi, Samsung">
+          <h5>Iphone • Motorola • Redmi • Samsung</h5>
+          <p>
+            Opciones ideales para quienes buscan rendimiento, diseño y buena tecnología sin gastar de más.
+          </p>
+          <p class="precio">$500.000</p>
+          <button class="add-to-cart"
+        data-name="iPhone / Motorola / Redmi / Samsung"
+        data-price="500000"
+        data-img="imagenes/todos.jpg">
+  Agregar al carrito
+</button>
+
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto">
+      <h2>Contactos</h2>
+
+      <form action="https://formspree.io/f/mrbygkeg" method="post">
+        <fieldset>
+          <legend><i class="fa-solid fa-user"></i> Información Personal</legend>
+
+          <div class="campo">
+            <label for="nombre"><i class="fa-solid fa-id-card"></i> Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+          </div>
+
+          <div class="campo">
+            <label for="email"><i class="fa-solid fa-envelope"></i> Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend><i class="fa-solid fa-comment-dots"></i> Motivo y Mensaje</legend>
+
+          <div class="campo">
+            <label for="motivo"><i class="fa-solid fa-list"></i> Motivo:</label>
+            <select id="motivo" name="motivo" required>
+              <option value="">-- Seleccioná una opción --</option>
+              <option value="consulta">Consulta</option>
+              <option value="soporte">Soporte</option>
+              <option value="otros">Otros</option>
+            </select>
+          </div>
+
+          <div class="campo">
+            <label for="mensaje"><i class="fa-solid fa-pen-to-square"></i> Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+          </div>
+        </fieldset>
+
+        <div class="botones">
+          <button type="submit"><i class="fa-solid fa-paper-plane"></i> Enviar</button>
+          <button type="reset"><i class="fa-solid fa-eraser"></i> Limpiar</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- Reseñas -->
+    <section id="reseñas">
+      <h2><i class="fa-solid fa-star"></i> Reseñas</h2>
+      <h3>Los Mejores</h3>
+
+      <div class="reseñas--contenedor">
+
+        <!-- Reseña 1 -->
+        <article class="reseña--card">
+          <h4>Juan P.</h4>
+          <div class="estrellas">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <p>"Conectándome con lo que más amo. Excelente servicio y calidad."</p>
+        </article>
+
+        <!-- Reseña 2 -->
+        <article class="reseña--card">
+          <h4>María L.</h4>
+          <div class="estrellas">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p>"El futuro empieza aquí. Muy satisfecha con mi compra."</p>
+        </article>
+
+        <!-- Reseña 3 -->
+        <article class="reseña--card">
+          <h4>Carlos G.</h4>
+          <div class="estrellas">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p>"Precio asequible y características únicas. Totalmente recomendable."</p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Mapa -->
+    <section id="mapa">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d26252.036998813608!2d-58.7268096!3d-34.66721145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1757806757637!5m2!1ses-419!2sar"
+        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+      </iframe>
+    </section>
+
+    <!-- Video YouTube -->
+    <section id="video-youtube">
+      <iframe width="315" height="576"
+        src="videos/Como vender celulares paso a paso 📱.mp4"
+        title="Teléfono gamer Nubia Neo 2 5G" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; Mi Tienda de Celulares</p>
+  </footer><!-- Ícono del carrito -->
+<div class="cart-icon" onclick="openCart()">
+  🛒 <span id="cart-count">0</span>
+</div>
+
+<!-- Carrito lateral -->
+<div id="cart" class="cart">
+  <div class="cart-header">
+    <h2>Carrito de Compras</h2>
+    <button onclick="closeCart()">✖</button>
+  </div>
+
+  <div id="cart-items" class="cart-items"></div>
+
+  <div class="cart-footer">
+    <h3>Total: ₲ <span id="cart-total">0</span></h3>
+    <button class="checkout-btn">Finalizar Compra</button>
+  </div>
+</div>
+<script src="script.js"> </script>
+</body>
+</html>
+

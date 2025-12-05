@@ -1,0 +1,345 @@
+/* -------------------- */
+/*        RESET         */
+/* -------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Instrument Serif", serif;
+  background: #f5f5f5;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* -------------------- */
+/*       HEADER         */
+/* -------------------- */
+header {
+  background: linear-gradient(90deg, #000428, #004e92);
+  padding: 30px 20px;
+  text-align: center;
+  color: white;
+}
+
+/* Logo centrado y circular */
+header .logo {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 20px; /* centra el logo */
+  border: 5px solid white; /* borde para que no se mezcle con el fondo */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+}
+
+
+
+header h1 {
+  font-size: 2.3rem;
+  margin-bottom: 10px;
+}
+
+/* NAV */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #ffda79;
+}
+
+/* -------------------- */
+/*       SECCIONES      */
+/* -------------------- */
+section {
+  margin: 50px auto;
+  width: 90%;
+  max-width: 1200px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* -------------------- */
+/*   VIDEO PRINCIPAL    */
+/* -------------------- */
+#inicio video {
+  width: 100%;
+  max-width: 900px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+/* -------------------- */
+/*      PRODUCTOS       */
+/* -------------------- */
+.productos--contenedor {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.producto {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.producto:hover {
+  transform: translateY(-5px);
+}
+
+.producto img {
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.producto h5 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.producto p {
+  margin-bottom: 10px;
+}
+
+.precio {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #009432;
+}
+
+/* BOTÓN */
+.add-to-cart {
+  width: 100%;
+  padding: 12px;
+  background: #004e92;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.add-to-cart:hover {
+  background: #003d73;
+}
+
+/* -------------------- */
+/*   CONTACTO (CELESTE) */
+/* -------------------- */
+#contacto {
+  background: #d9efff;
+  padding: 40px 20px;
+  border-radius: 15px;
+}
+
+form {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 700px;
+  margin: auto;
+  text-align: left;
+}
+
+fieldset {
+  border: none;
+  margin-bottom: 20px;
+}
+
+legend {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.campo {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #aaa;
+}
+
+.botones {
+  display: flex;
+  gap: 20px;
+}
+
+button[type="submit"],
+button[type="reset"] {
+  flex: 1;
+  padding: 12px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button[type="submit"] {
+  background: #0062ff;
+  color: white;
+}
+
+button[type="reset"] {
+  background: #777;
+  color: white;
+}
+
+/* -------------------- */
+/*       RESEÑAS        */
+/* -------------------- */
+.reseñas--contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+
+.reseña--card {
+  background: white;
+  width: 280px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+}
+
+.estrellas i {
+  color: gold;
+}
+
+/* ---------------------------- */
+/*   VIDEO YOUTUBE / LOCAL     */
+/* ---------------------------- */
+#video-youtube iframe {
+  width: 100%;
+  max-width: 350px;
+  height: 600px;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+
+/* -------------------- */
+/*     FOOTER           */
+/* -------------------- */
+footer {
+  background: #000428;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+/* -------------------- */
+/*    CARRITO (SIDEBAR) */
+/* -------------------- */
+.cart-icon {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: #004e92;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 50px;
+  font-size: 1.4rem;
+  cursor: pointer;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+}
+
+.cart {
+  position: fixed;
+  top: 0;
+  right: -400px;
+  width: 350px;
+  height: 100%;
+  background: white;
+  box-shadow: -3px 0 10px rgba(0,0,0,0.3);
+  transition: 0.4s;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cart.open {
+  right: 0;
+}
+
+.cart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart-items {
+  flex-grow: 1;
+  overflow-y: auto;
+  margin: 20px 0;
+}
+
+.cart-footer {
+  text-align: center;
+}
+
+.checkout-btn {
+  padding: 12px;
+  background: #009432;
+  color: white;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* -------------------- */
+/*   RESPONSIVE         */
+/* -------------------- */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .botones {
+    flex-direction: column;
+  }
+
+  #video-youtube iframe {
+    height: 450px;
+  }
+}
